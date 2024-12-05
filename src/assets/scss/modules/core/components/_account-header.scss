@@ -1,0 +1,39 @@
+.account-header {
+  .account-header-left {
+    .img {
+      margin-inline-start: -10px;
+      margin-inline-end: $spacing-md-extra;
+    }
+    .account-header-left-title {
+      .account-header-left-title-welcome {
+        margin-top: $spacing-xxxs;
+        color: $purple-color;
+        margin-bottom: $spacing-xs;
+      }
+      .account-header-left-title-name {
+        color: $black-color;
+        font-size: $spacing-sm-plus;
+      }
+      .account-header-left-title-badge {
+        .badge-img {
+          margin-inline-start: -$spacing-xs;
+        }
+        .badge-text {
+          font-size: $spacing-sm-plus;
+          color: $coral-color;
+          margin-top: 32px;
+        }
+      }
+    }
+    .p-avatar-image {
+      width: $avatar-account-dimensions;
+      height: $avatar-account-dimensions;
+    }
+  }
+  .account-header-right {
+    .view-account {
+      padding: $spacing-xs-plus $spacing-xs-plus;
+      font-size: $spacing-xs-extra;
+    }
+  }
+}

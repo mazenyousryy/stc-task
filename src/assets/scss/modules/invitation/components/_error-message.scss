@@ -1,0 +1,9 @@
+.error-msg-dialog {
+  textarea {
+    resize: none;
+    min-height: 185px;
+  }
+  .description {
+    color: $grey-dark-color;
+  }
+}

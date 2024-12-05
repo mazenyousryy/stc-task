@@ -1,0 +1,29 @@
+<section class="account-header flex justify-content-between">
+  <div class="account-header-left flex">
+    <div class="img">
+      <p-avatar [image]="avatarImage" shape="circle" class="mt-6"></p-avatar>
+    </div>
+    <div class="account-header-left-title">
+      <h1 class="account-header-left-title-welcome text-4xl font-bold">
+        {{"HOME-PAGE.HOME-PAGE-HEADER.HEADER-TITLE" | translate}}
+      </h1>
+      <p class="account-header-left-title-name">
+        {{"HOME-PAGE.HOME-PAGE-HEADER.HEADER-NAME" | translate}}
+      </p>
+      <div class="account-header-left-title-badge flex">
+        <div class="badge-img mt-2">
+          <img [src]="badgeImage" alt="badge icon">
+        </div>
+        <div class="badge-text">
+          <p class="font-medium text-2xl" [style.color]="textColor">
+            {{ badgeText }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="account-header-right">
+    <button pButton type="button" [label]="'HOME-PAGE.HOME-PAGE-HEADER.VIEW-ACCOUNT' | translate"
+      class="view-account custom-btn font-bold border-noround"></button>
+  </div>
+</section>

@@ -1,0 +1,63 @@
+<main class="terms-and-conditions">
+  <div class="bread-crumb-container flex justify-content-start lg:mt-7 mt-3">
+    <p-breadcrumb class="p-breadcrumb max-w-full border-0" [model]="items">
+      <ng-template pTemplate="item" let-item>
+        <ng-template #staticLabel>
+          <span class="static-label font-medium">{{ item.label }}</span>
+        </ng-template>
+        <ng-container *ngIf="item.route; else staticLabel">
+          <a [routerLink]="item.route">
+            <span class="link-text font-medium">{{ item.label }}</span>
+          </a>
+        </ng-container>
+      </ng-template>
+    </p-breadcrumb>
+  </div>
+
+  <div class="terms-and-conditions-card p-7 ">
+    <!-- Title Section -->
+    <div class="terms-and-conditions-header">
+      <h2 class="terms-and-conditions-title lg:text-6xl text-2xl">{{"TERMS-AND-CONDITIONS.TITLE" | translate}}</h2>
+      <p class="terms-and-conditions-sub-title lg:text-lg mt-2 text-sm ">{{"TERMS-AND-CONDITIONS.SUB-TITLE" |
+        translate}}</p>
+    </div>
+    <!-- Content Section -->
+    <div class="terms-and-conditions-content">
+      <!-- Confidential Section -->
+      <div class="mb-6">
+        <h3 class="font-medium lg:text-4xl">{{"TERMS-AND-CONDITIONS.CONFIDENTIAL.CONFIDENTIAL-TITLE" | translate}}</h3>
+        <p class="lg:text-lg mt-2">
+          {{"TERMS-AND-CONDITIONS.CONFIDENTIAL.CONFIDENTIAL-PARAGRAPH-ONE" | translate}}
+        </p>
+        <p class="lg:text-lg mt-3">
+          {{"TERMS-AND-CONDITIONS.CONFIDENTIAL.CONFIDENTIAL-PARAGRAPH-TWO" | translate}}
+        </p>
+      </div>
+
+      <!-- Exclusions Section -->
+      <div class="mb-6">
+        <h3 class="font-medium lg:text-4xl">{{"TERMS-AND-CONDITIONS.EXCLUSIONS.EXCLUSIONS-TITLE" | translate}}</h3>
+        <p class="lg:text-lg mt-2">
+          {{"TERMS-AND-CONDITIONS.EXCLUSIONS.EXCLUSIONS-PARAGRAPH-ONE" | translate}}
+        </p>
+        <p class="lg:text-lg mt-3">
+          {{"TERMS-AND-CONDITIONS.EXCLUSIONS.EXCLUSIONS-PARAGRAPH-TWO" | translate}}
+        </p>
+      </div>
+
+      <!-- Use Section -->
+      <div class="">
+        <h3 class="font-medium lg:text-4xl">{{"TERMS-AND-CONDITIONS.USE.USE-TITLE" | translate}}</h3>
+        <p class="lg:text-lg mt-2">
+          {{"TERMS-AND-CONDITIONS.USE.USE-PARAGRAPH" | translate}}
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <!-- Button Section -->
+  <div class="lg:py-8 py-5 flex justify-content-end">
+    <button pButton type="button" [label]="'TERMS-AND-CONDITIONS.ACCEPT' | translate"
+      class="accept-btn text-sm custom-btn" (click)="navigateToHome()"></button>
+  </div>
+</main>

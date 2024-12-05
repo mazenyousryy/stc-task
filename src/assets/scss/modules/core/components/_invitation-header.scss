@@ -1,0 +1,29 @@
+header {
+  background-color: $purple-color;
+  color: $white-color;
+  border-bottom: 5px solid $white-color;
+  .lang-btn {
+    img {
+      margin-inline-start: 5px;
+    }
+  }
+  ul {
+    .language::after,
+    .profile::after {
+      content: "";
+      width: 0;
+      height: 100%;
+      position: absolute;
+      border: 3px solid white;
+      top: 0;
+      right: 155px;
+    }
+    .profile::after {
+      right: 260px;
+    }
+  }
+  li:last-child {
+    margin: 0;
+    border: 0;
+  }
+}

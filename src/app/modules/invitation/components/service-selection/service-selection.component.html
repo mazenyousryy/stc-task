@@ -1,0 +1,23 @@
+<div class="custom-dialog service-selection-dialog px-7 pb-6 pt-3">
+  <h2 class="custom-dialog-header mb-5 font-bold">{{"FIRST-TIME-LOGIN.SERVICE-SELECTION.SERVICE-SELECTION-HEADER" |
+    translate}}</h2>
+
+  <p class="selection-description mt-3">{{"FIRST-TIME-LOGIN.SERVICE-SELECTION.SELECT-TITLE" | translate}}</p>
+
+  <form [formGroup]="serviceForm" (ngSubmit)="navigateToTermsAndConditions()">
+    <div *ngFor="let service of services" class="p-field-checkbox">
+      <p-checkbox class="custom-checkbox mt-4" [formControlName]="service.key" inputId="{{ service.key }}"
+        [value]="service"></p-checkbox>
+      <label for="{{ service.key }}" class="checkbox-label mt-4">{{ service.label | translate }}</label>
+    </div>
+
+    <button pButton type="submit" [label]="'FIRST-TIME-LOGIN.SERVICE-SELECTION.DONE' | translate | uppercase"
+      [disabled]="!isAnySelected" class="custom-btn w-full font-bold text-sm border-noround mt-6"></button>
+
+    <button type="submit" pButton [label]="'FIRST-TIME-LOGIN.SERVICE-SELECTION.SKIP' | translate"
+      class="p-button-link mt-5 block text-center w-full text-black-alpha-90 font-medium underline">
+    </button>
+
+  </form>
+
+</div>

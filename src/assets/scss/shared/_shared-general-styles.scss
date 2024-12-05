@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-family-1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// Custom Button
+.custom-btn {
+  background-color: $coral-color !important;
+  border: none;
+  color: $white-color;
+}
+
+.custom-btn:hover {
+  background-color: darken($coral-color, 10%) !important;
+}
+
+// Custom Dialog
+.custom-dialog {
+  color: $black-color;
+  .custom-dialog-header {
+    font-size: $lg-fw;
+  }
+}
+
+// Custom Tabs
+.p-card {
+  box-shadow: none !important;
+}
+
+.tabs {
+  color: $black-color;
+  padding-inline-end: $spacing-lg-46;
+  .custom-tab-view {
+    .p-tabview-nav li {
+      font-weight: $fw-md;
+      font-size: $spacing-sm-20;
+      margin-inline-end: $spacing-md-32;
+      padding-block-end: $spacing-xs-plus;
+      position: relative;
+      .p-tabview-title {
+        padding: 2px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background-color: $coral-color;
+        transition: width 0.3s ease-in-out;
+      }
+    }
+    .p-tabview-nav li.p-highlight {
+      font-weight: $fw-bold;
+      &::after {
+        width: $menu-border;
+        border-radius: $radius-xs;
+      }
+    }
+  }
+}
+
+html[dir="rtl"],
+[dir="rtl"] {
+  .custom-tab-view {
+    .p-tabview-nav li {
+      &::after {
+        right: 0;
+      }
+    }
+    .p-tabview-nav li.p-highlight {
+      &::after {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+}

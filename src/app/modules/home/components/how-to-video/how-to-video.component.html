@@ -1,0 +1,17 @@
+<div class="how-to-video px-4">
+  <h2 class="text-2xl	font-bold mb-5">
+    {{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-HOW-TO.HOME-PAGE-NEWS-TABS-HOW-TO-HEADER" |
+    translate}}</h2>
+  <div *ngFor="let video of videos | slice:0:3" class="video-card mb-4 h-full">
+    <div class="video-details my-4 cursor-pointer">
+      <div class="video-img relative">
+        <img [src]="video.urlToImage || './assets/images/no-image.png'" alt="Video Thumbnail" class="video-thumbnail" />
+        <img src="./assets/svgs/share-icon-line.svg" alt="share icon" class="share-icon absolute bottom-0 right-0 p-2">
+      </div>
+      <a [href]="video.url" target="_blank" class="video-title font-medium text-lg mt-3 inline-block line-height-2"
+        [title]="video.title">
+        {{ video.title | customTitle:6 }}
+      </a>
+    </div>
+  </div>
+</div>

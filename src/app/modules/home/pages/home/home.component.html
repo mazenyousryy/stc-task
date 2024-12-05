@@ -1,0 +1,45 @@
+<main id="home-page">
+  <app-account-header [badgeText]="'HOME-PAGE.HOME-PAGE-HEADER.BADGE-PREMIUM' | translate"
+    [badgeImage]="'./assets/svgs/premium-badge-icon.svg'">
+  </app-account-header>
+  <section id="home-news" class="tabs">
+    <div class="card custom-tab-view home-card">
+      <p-tabView class="text-xl p">
+        <p-tabPanel [header]="'HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-TABS.HOME-PAGE-NEWS-TABS-TREND' |translate">
+          <div class="flex justify-content-between">
+            <div class="lg:col-8 col-12 pt-6">
+              <app-trend></app-trend>
+            </div>
+            <div class="lg:col-3 col-12 pt-6">
+              <app-how-to-video></app-how-to-video>
+            </div>
+          </div>
+        </p-tabPanel>
+        <p-tabPanel [header]="'HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-TABS.HOME-PAGE-NEWS-TABS-FOLLOWED' | translate">
+          <ng-template pTemplate="content">
+            <div class="flex justify-content-between">
+              <div class="lg:col-8 col-12 pt-6">
+                <app-followed-topics></app-followed-topics>
+              </div>
+              <div class="lg:col-3 col-12 pt-6">
+                <app-how-to-video></app-how-to-video>
+              </div>
+            </div>
+          </ng-template>
+        </p-tabPanel>
+        <p-tabPanel [header]="'HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-TABS.HOME-PAGE-NEWS-TABS-LATEST' | translate">
+          <ng-template pTemplate="content">
+            <div class="flex justify-content-between">
+              <div class="lg:col-8 col-12 pt-6">
+                <app-followed-topics></app-followed-topics>
+              </div>
+              <div class="lg:col-3 col-12 pt-6">
+                <app-how-to-video></app-how-to-video>
+              </div>
+            </div>
+          </ng-template>
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+  </section>
+</main>

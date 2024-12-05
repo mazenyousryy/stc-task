@@ -1,0 +1,57 @@
+.terms-and-conditions {
+  .bread-crumb-container {
+    margin-bottom: $spacing-lg;
+    .p-breadcrumb {
+      margin-inline-start: $spacing-lg-plus;
+      a {
+        .link-text {
+          color: $coral-color;
+          margin-inline-end: $spacing-xxs;
+        }
+      }
+      .static-label {
+        color: $grey-dark-color;
+        margin-inline-start: $spacing-xxs;
+      }
+    }
+  }
+  .terms-and-conditions-card {
+    margin-inline: $spacing-huge;
+    background-color: $grey-medium-color;
+    .terms-and-conditions-header {
+      margin-bottom: $spacing-xxl;
+      .terms-and-conditions-sub-title {
+        color: $grey-dark-color;
+      }
+    }
+    .terms-and-conditions-content {
+      line-height: $md-line-height;
+    }
+  }
+  .accept-btn {
+    margin-inline-end: $spacing-xxxl;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .terms-and-conditions {
+    .bread-crumb-container {
+      margin-bottom: $spacing-md-plus;
+      .p-breadcrumb {
+        margin-inline-start: 0;
+      }
+    }
+    .terms-and-conditions-card {
+      margin-inline: $spacing-md;
+      .terms-and-conditions-header {
+        margin-bottom: $spacing-xl;
+      }
+      .terms-and-conditions-content {
+        line-height: $md-line-height;
+      }
+    }
+    .accept-btn {
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.badge-points {
+  .level-column {
+    gap: $spacing-xs-plus;
+    .level-icon {
+      width: $icon-table-dimensions;
+      height: $icon-table-dimensions;
+    }
+    .level-details {
+      .user {
+        color: $purple-color;
+      }
+      .points {
+        color: $grey-dark-color; /* Grey for points */
+      }
+      .badge {
+        padding: $spacing-xxxs-4 $spacing-xxs;
+        border-radius: $radius-xxxl;
+        margin-inline-start: $spacing-xs-plus;
+        &.badge-earned {
+          background-color: $oasis-light-color;
+        }
+        &.badge-coming {
+          background-color: $sunset-orange-color;
+        }
+      }
+    }
+  }
+}

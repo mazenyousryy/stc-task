@@ -1,0 +1,41 @@
+<div class="panel badge-points mt-4">
+  <div class="card">
+    <p-table [value]="badgePoints" class="custom-table">
+      <!-- Table Header -->
+      <ng-template pTemplate="header">
+        <tr class="font-bold text-sm bg-white">
+          <th class="bg-white col-5">{{
+            "LEADERBOARD.LEADERBOARD-BADGE-POINTS.LEADERBOARD-BADGE-POINTS-LEVEL.LEADERBOARD-BADGE-POINTS-LEVEL-HEADER"
+            | translate
+            }}</th>
+          <th class="bg-white col-7">{{
+            "LEADERBOARD.LEADERBOARD-BADGE-POINTS.LEADERBOARD-BADGE-POINTS-ELIGIBLE.LEADERBOARD-BADGE-POINTS-ELIGIBLE-HEADER"
+            | translate }}
+          </th>
+        </tr>
+      </ng-template>
+
+      <ng-template pTemplate="body" let-point>
+        <tr>
+          <td class=" col-5 vertical-align-middle">
+            <div class="level-column col-5 flex align-items-center justify-content-start w-full">
+              <img [src]="point.icon" alt="{{ point.user }}" class="level-icon" />
+              <div class="level-details flex gap-3 flex-column">
+                <div class="levels-details-data flex">
+                  <span class="user font-medium text-lg">{{ point.user }}</span>
+                  <span class="badge font-normal text-sm text-white" [ngClass]="point.badgeClass" *ngIf="point.badge">{{
+                    point.badge }}</span>
+                </div>
+                <span class="points font-normal text-base">{{ point.points }}</span>
+              </div>
+            </div>
+          </td>
+          <!-- Second Column -->
+          <td class="col-7 vertical-align-middle text-lg line-height-3">{{ point.description
+            }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+
+</div>

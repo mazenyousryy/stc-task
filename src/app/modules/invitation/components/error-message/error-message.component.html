@@ -1,0 +1,18 @@
+<div class="custom-dialog error-msg-dialog px-8 pb-6 pt-3">
+  <h2 class="custom-dialog-header mb-5 font-bold">{{"DECLINED-INVITATION.DECLINE-INVITATION-HEADER" |
+    translate}}</h2>
+
+  <p class="description mt-3">{{"DECLINED-INVITATION.REJECT-OFFER" | translate}}</p>
+  <P class="description mb-3">{{"DECLINED-INVITATION.REJECT-OFFER-CONFIRM" | translate}}</P>
+
+  <form [formGroup]="formGroup">
+    <textarea class="p-2 responsive-textarea w-full" pInputTextarea formControlName="text">
+        </textarea>
+  </form>
+
+  <div class="confirm-btn flex justify-content-end">
+    <button type="button" pButton [label]="'DECLINED-INVITATION.CONFIRM' | translate | uppercase"
+      (click)="navigateErrorPage()"
+      class="p-button-link custom-btn mt-4 block text-center px-6 border-noround"></button>
+  </div>
+</div>

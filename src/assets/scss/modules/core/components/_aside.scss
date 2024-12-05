@@ -1,0 +1,31 @@
+aside {
+  background-color: $purple-color;
+  ul {
+    padding-top: $spacing-xl;
+    li {
+      padding-inline-start: $spacing-md;
+      margin-bottom: $spacing-md;
+      padding-block: $spacing-xxxs;
+      transition: 0.3s all;
+      &:hover {
+        background-color: $purple-dark-color;
+        font-weight: $fw-bold;
+        border-left: 5px solid $coral-color;
+      }
+    }
+  }
+}
+
+html[dir="rtl"],
+[dir="rtl"] {
+  aside {
+    ul {
+      li {
+        &:hover {
+          border-left: 0;
+          border-right: 5px solid $coral-color;
+        }
+      }
+    }
+  }
+}

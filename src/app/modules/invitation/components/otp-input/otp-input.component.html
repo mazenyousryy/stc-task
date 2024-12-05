@@ -1,0 +1,28 @@
+<div class="custom-dialog otp-input-dialog px-7 pb-6 pt-3">
+
+  <h2 class="custom-dialog-header mb-5 font-bold">{{"FIRST-TIME-LOGIN.ENTER-OTP.ENTER-OTP-HEADER" | translate}}</h2>
+
+  <div class="otp-dialog-email">
+    <p class="text-base">{{"FIRST-TIME-LOGIN.ENTER-OTP.EMAIL-SENT" | translate | uppercase}}</p>
+    <p class="font-bold">{{"FIRST-TIME-LOGIN.ENTER-OTP.EMAIL-ADDRESS" | translate | lowercase}}</p>
+  </div>
+
+  <form [formGroup]="otpForm" (ngSubmit)="onOtpSubmit()">
+    <p-inputOtp formControlName="otpCode">
+      <ng-template pTemplate="input" let-token let-events="events">
+        <input pInputText class="custom-otp-input font-bold mt-6" (input)="events.input($event)"
+          (keydown)="events.keydown($event)" type="number" [attr.value]="token" [maxLength]="1"
+          (input)="onInput($event, events)" />
+      </ng-template>
+    </p-inputOtp>
+
+    <button type="button" (click)="resend()"
+      class="otp-dialog-resend block font-bold text-sm mt-6 cursor-pointer bg-transparent"
+      [formNoValidate]="true">{{"FIRST-TIME-LOGIN.ENTER-OTP.RESEND-CODE"|
+      translate | uppercase}}</button>
+
+    <button pButton type="submit" [label]="'FIRST-TIME-LOGIN.ENTER-OTP.VERIFY-ACCOUNT' | translate | uppercase"
+      class="custom-btn w-full font-bold text-sm border-noround" [disabled]="!otpForm.valid"></button>
+  </form>
+
+</div>

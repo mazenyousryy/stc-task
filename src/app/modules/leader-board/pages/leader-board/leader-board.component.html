@@ -1,0 +1,68 @@
+<main id="leader-board">
+  <app-account-header [textColor]="'#4F008C'" [badgeImage]="'./assets/svgs/achievement-icon.svg'"
+    [badgeText]="'HOME-PAGE.HOME-PAGE-HEADER.BADGE-BEGINNER' | translate"></app-account-header>
+  <section id="leader-board-content" class="grid grid-nogutter justify-content-between">
+    <div class="leader-board-content-congrats lg:col-8 mt-5">
+      <div class="leader-board-content-header">
+        <h2 class="leader-board-content-header-title text-2xl font-medium">
+          {{"LEADERBOARD.LEADERBOARD-HEADER.LEADERBOARD-HEADER-TITLE" | translate}}</h2>
+        <p class="leader-board-content-header-paragraph mt-3">
+          {{"LEADERBOARD.LEADERBOARD-HEADER.LEADERBOARD-HEADER-PARAGRAPH" |
+          translate}}</p>
+      </div>
+      <div class="leader-board-content-congrats-left mt-5 p-3 flex justify-content-between align-content-center">
+        <div class="leader-board-content-congrats-left-content flex align-content-center">
+          <div class="congrats-img">
+            <img src="./assets/svgs/achievement-icon.svg" class="w-full" alt="">
+          </div>
+          <div class="congrats-content flex flex-column justify-content-center">
+            <p class="congrats-text text-xl font-medium">{{"LEADERBOARD.LEADER-BOARD-CARD.LEADERBOARD-CARD-CONG"
+              |translate}}</p>
+            <p class="text-xl font-medium">{{"LEADERBOARD.LEADER-BOARD-CARD.LEADERBOARD-CARD-LEVEL" |translate}}</p>
+            <p class="date-text">{{"LEADERBOARD.LEADER-BOARD-CARD.LEADERBOARD-CARD-DATE"
+              |translate}}</p>
+          </div>
+        </div>
+        <div class="leader-board-content-congrats-left-button my-auto">
+          <button pButton type="button" [label]="'LEADERBOARD.LEADER-BOARD-CARD.LEADERBOARD-CARD-SHARE-BTN' | translate"
+            class="accept-btn text-sm custom-btn" iconPos="left">
+            <span class="p-button-icon">
+              <img src="./assets/svgs/share-icon.svg" alt="share icon" class="button-icon">
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="leader-board-content-congrats-right lg:col-4 mt-5 h-fit">
+      <div class="leader-board-congrats-card flex align-content-center justify-content-start text-white h-fit">
+        <div class="leader-board-content-congrats-right-img">
+          <img src="./assets/svgs/gift-icon.svg" alt="">
+        </div>
+        <div class="leader-board-content-congrats-right-content py-5 flex flex-column">
+          <p class="font-bold">{{"LEADERBOARD.LEADERBOARD-MY-POINTS.LEADERBOARD-MY-POINTS-HEADER" |translate}}</p>
+          <p class="points-number font-bold">{{"LEADERBOARD.LEADERBOARD-MY-POINTS.LEADERBOARD-MY-POINTS-POINTS"
+            |translate}}
+            <span class="text-sm">{{"LEADERBOARD.LEADERBOARD-MY-POINTS.LEADERBOARD-MY-POINTS-POINT" |translate}}</span>
+          </p>
+          <p class="text-xs">{{"LEADERBOARD.LEADERBOARD-MY-POINTS.LEADERBOARD-MY-POINTS-UPDATE" |translate}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="leader-board-table" class="tabs">
+    <div class="card custom-tab-view">
+      <p-tabView class="text-xl">
+        <p-tabPanel [header]="'LEADERBOARD.LEADERBOARD-TABS.LEADERBOARD-TABS-ACTIVITIES' |translate">
+          <div class="lg:col-8 col-12">
+            <app-activities-points></app-activities-points>
+          </div>
+        </p-tabPanel>
+        <p-tabPanel class="w-full" [header]="'LEADERBOARD.LEADERBOARD-TABS.LEADERBOARD-TABS-BADGE' |translate">
+          <ng-template pTemplate="content">
+            <app-badge-points></app-badge-points>
+          </ng-template>
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+  </section>
+</main>

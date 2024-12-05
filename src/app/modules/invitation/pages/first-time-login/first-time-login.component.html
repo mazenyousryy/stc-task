@@ -1,0 +1,50 @@
+<main
+  class="first-time-invitation bg-contain bg-no-repeat bg-right-bottom grid m-0 justify-content-center align-items-center px-4 h-full">
+  <p-card class="invitation-card lg:col-8 sm:col-12 bg-white border-round-3xl">
+    <div class="invitation-container lg:py-6 sm:py-4 px-4">
+      <div class="invitation-content flex align-items-center">
+        <p-avatar image="assets/images/user-img.jpg" size="xlarge" shape="circle" class="mt-6" />
+        <div class="invitation-details">
+          <p class="invitation-details-title font-bold text-2xl mb-4">{{"FIRST-TIME-LOGIN.TITLE" | translate}}</p>
+          <h4 class="invitation-details-name mb-2 font-bold text-xl">{{"FIRST-TIME-LOGIN.NAME" | translate}}</h4>
+          <p class="invitation-details-position text-sm mb-2">{{"FIRST-TIME-LOGIN.POSITION" | translate}}</p>
+          <a routerLink="#" class="invitation-details-see-profile font-medium">{{"FIRST-TIME-LOGIN.PROFILE" |
+            translate}}
+            <i [ngClass]="{
+                    'pi pi-angle-left': translateService.currentLang === 'ar',
+                    'pi pi-angle-right': translateService.currentLang !== 'ar'
+                  }" class="ml-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="actions flex align-items-end justify-content-end mt-6">
+        <p-button [label]="'FIRST-TIME-LOGIN.NOT-INTERESTED' | translate" [severity]="'secondary'" [text]="true"
+          class="text-lg not-interested-btn" (onClick)="showNotInterestedDialog()">
+        </p-button>
+
+        <p-button [label]="'FIRST-TIME-LOGIN.ACCEPT' | translate" styleClass="coral-button" (onClick)="showOtpDialog()">
+        </p-button>
+      </div>
+    </div>
+  </p-card>
+
+  <div class="illustration lg:col-4 sm:col-12">
+    <div class="illustration-container border-solid ">
+      <img src="assets/images/invitation-card-background.jpg" alt="Illustration" class="w-full" />
+    </div>
+  </div>
+
+  <p-dialog class="shadow-none" [(visible)]="otpDialogVisible" [modal]="true">
+    <app-otp-input (otpVerified)="onOtpVerified()"></app-otp-input>
+  </p-dialog>
+
+  <p-dialog [(visible)]="serviceDialogVisible" [modal]="true" [closable]="true">
+    <app-service-selection (servicesSelected)="onServicesClosed()"
+      (skipSelection)="onServicesClosed()"></app-service-selection>
+  </p-dialog>
+
+  <p-dialog [(visible)]="notInterestedDialogVisible" [modal]="true">
+    <app-error-message></app-error-message>
+  </p-dialog>
+
+</main>

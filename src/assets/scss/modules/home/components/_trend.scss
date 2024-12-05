@@ -1,0 +1,58 @@
+.trend-content {
+  .trend-item {
+    border-bottom: 2px solid $off-white-color;
+
+    .user-image {
+      img {
+        width: $icon-table-dimensions;
+        height: $icon-table-dimensions;
+      }
+    }
+
+    .user-content {
+      .news-title {
+        color: $purple-color;
+        .date {
+          color: $grey-dark-color;
+        }
+      }
+
+      .user-role {
+        color: $grey-dark-color;
+        margin: $spacing-xxs $spacing-xs 0 0;
+
+        .following {
+          color: $coral-color;
+          font-family: $font-family-2;
+        }
+      }
+
+      .engagement {
+        margin-top: $spacing-sm-20;
+        span {
+          .icon {
+            margin-inline-end: $spacing-xxxs;
+          }
+        }
+      }
+
+      .share-answer-btn {
+        background-color: $coral-color;
+        padding: $share-answer-padding;
+        &:hover {
+          background-color: $coral-hovered-color;
+        }
+      }
+    }
+  }
+}
+
+.custom-paginator {
+  margin-top: 16px;
+  justify-content: center;
+
+  .p-paginator {
+    display: flex;
+    justify-content: center;
+  }
+}

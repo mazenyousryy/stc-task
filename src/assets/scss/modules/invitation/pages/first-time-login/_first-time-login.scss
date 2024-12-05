@@ -1,0 +1,48 @@
+.invitation-layout {
+  .first-time-invitation {
+    background-image: url("../../../../../images/auth-background-img.png");
+    .invitation-card {
+      box-shadow: none !important;
+      border: $card-border;
+      .invitation-content {
+        .invitation-details {
+          margin-inline-start: $spacing-xs;
+          .invitation-details-title {
+            color: $black-color;
+          }
+          .invitation-details-name {
+            color: $purple-color;
+          }
+          .invitation-details-position {
+            color: $grey-dark-color;
+          }
+          .invitation-details-see-profile {
+            color: $coral-color;
+          }
+        }
+      }
+      .actions {
+        .not-interested-btn {
+          margin-inline-end: $spacing-md;
+        }
+      }
+    }
+    .illustration {
+      padding-inline-start: $spacing-xl;
+      .illustration-container {
+        border-width: $lg-border;
+        border-color: $purple-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .invitation-layout {
+    .first-time-invitation {
+      .illustration {
+        padding-inline-start: 0;
+      }
+    }
+  }
+}

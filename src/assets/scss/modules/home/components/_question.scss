@@ -1,0 +1,33 @@
+.question {
+  color: $black-color;
+  .question-title {
+    margin-block: $spacing-xs-plus $spacing-sm-18;
+    .user-image {
+      min-width: $avatar-question-dimensions;
+      min-height: $avatar-question-dimensions;
+      max-width: $avatar-question-dimensions;
+      max-height: $avatar-question-dimensions;
+    }
+    .question-description {
+      margin-inline-start: 1rem;
+      .question-header {
+        color: $purple-color;
+        .following {
+          color: $coral-color;
+          font-family: $font-family-2;
+        }
+      }
+      .tafani-profile {
+        img {
+          margin-inline-end: $spacing-xxxs-5;
+        }
+        a {
+          color: $coral-color;
+        }
+      }
+    }
+  }
+  .question-content {
+    color: $light-black;
+  }
+}

@@ -1,0 +1,20 @@
+<div class="question">
+  <h4 class="author font-medium">{{ source }}</h4>
+  <div class="question-title flex align-items-center">
+    <div class="user-image">
+      <img src="assets/images/news-img.jpg" alt="User Image" class="border-circle w-full" />
+    </div>
+    <div class="question-description flex flex-column">
+      <p class="question-header font-bold">{{ title }} <span
+          class="following text-lg">{{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-FOLLOWED.HOME-PAGE-NEWS-FOLLOWED-QUESTION-QUESTION.HOME-PAGE-NEWS-FOLLOWED-QUESTION-QUESTION-FOLLOW"
+          | translate}}</span></p>
+      <div class="tafani-profile flex mt-2">
+        <img src="./assets/svgs/profile-icon.svg" alt="profile icon">
+        <a href="#"
+          class="tafani-profile underline font-medium text-sm">{{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-FOLLOWED.HOME-PAGE-NEWS-FOLLOWED-QUESTION-QUESTION.HOME-PAGE-NEWS-FOLLOWED-QUESTION-QUESTION-TAFANI"
+          | translate}}</a>
+      </div>
+    </div>
+  </div>
+  <p class="question-content">{{ content | customTitle:20}}</p>
+</div>

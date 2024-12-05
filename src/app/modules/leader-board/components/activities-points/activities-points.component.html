@@ -1,0 +1,29 @@
+<div class="panel activities-points">
+  <p class="gain-points-text font-bold text-xl">
+    {{"LEADERBOARD.LEADERBOARD-ACTIVITIES-AND-POINTS.LEADERBOARD-ACTIVITIES-AND-POINTS-HEADER"
+    |translate}}</p>
+  <div class="card">
+    <p-table [value]="activityPoints" class="custom-table">
+      <!-- Table Header -->
+      <ng-template pTemplate="header">
+        <tr class="font-bold text-sm bg-white">
+          <th class="bg-white col-9">{{
+            "LEADERBOARD.LEADERBOARD-ACTIVITIES-AND-POINTS.LEADERBOARD-ACTIVITIES-AND-POINTS-ACTIVITY" | translate
+            }}</th>
+          <th class="bg-white col-3">{{
+            "LEADERBOARD.LEADERBOARD-ACTIVITIES-AND-POINTS.LEADERBOARD-ACTIVITIES-AND-POINTS-POINTS" | translate }}
+          </th>
+        </tr>
+      </ng-template>
+
+      <!-- Table Body -->
+      <ng-template pTemplate="body" let-rowData>
+        <tr>
+          <td class="col-9">{{ rowData.activity }}</td>
+          <td class="points-values font-bold col-3">{{ rowData.points }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+
+</div>
