@@ -1,0 +1,77 @@
+// PrimeNG Custom
+
+// General Custom (Shared)
+
+// Button
+:host ::ng-deep .p-button {
+  background-color: $coral-color;
+  border-color: $coral-color;
+
+  &:hover {
+    background-color: darken($coral-color, 10%);
+    border-color: darken($coral-color, 10%);
+  }
+}
+
+.coral-button {
+  background-color: $coral-color;
+  border-color: $coral-color;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($coral-color, 10%);
+  }
+}
+
+// Dialog
+
+.p-dialog {
+  .p-dialog-header {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: none;
+  }
+  border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.custom-checkbox .p-checkbox-box {
+  border: 2px solid $purple-color; /* Border for the checkbox */
+  border-radius: 0;
+}
+
+.p-button:focus {
+  outline: none;
+  box-shadow: none; /* Custom pink focus shadow */
+}
+
+/* Checked state */
+.custom-checkbox .p-checkbox-box.p-highlight {
+  background-color: $purple-color; /* Background color for checked state */
+  border-color: $purple-color; /* Border color for checked state */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus {
+  box-shadow: none;
+}
+
+// Dialog Header
+
+.p-dialog .p-dialog-header .p-dialog-header-icon {
+  color: $coral-color;
+  padding: 2rem 2rem;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon:hover {
+  color: darken($coral-color, 10%);
+}
+
+.p-dialog .p-dialog-header-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.p-dialog .p-dialog-header-close:hover {
+  background-color: transparent;
+}

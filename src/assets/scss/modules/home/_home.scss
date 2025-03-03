@@ -1,0 +1,16 @@
+#home-page {
+  padding: $spacing-md-extra;
+  #home-news {
+    margin-block: $spacing-sm-20;
+    border-top: 2px solid $off-white-color;
+    .home-card {
+      margin-top: $spacing-lg-plus;
+    }
+  }
+  .tabs {
+    padding-inline-end: unset;
+    .custom-tab-view .p-tabview-nav li {
+      margin-inline-end: 3rem !important;
+    }
+  }
+}

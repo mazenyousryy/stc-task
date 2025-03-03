@@ -1,0 +1,44 @@
+<div class="followed-topics">
+  <div *ngFor="let question of paginatedQuestions; let i = index">
+    <div class="mt-4">
+      <app-question [title]="question.title" [source]="question.source.name" [content]="question.content"
+        [url]="question.url">
+      </app-question>
+
+      <div *ngIf="i === 0" class="question-footer flex justify-content-between mt-3">
+        <div class="question-footer-left flex align-items-center">
+          <p class="device text-sm px-3 py-1">
+            {{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-FOLLOWED.HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER.HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER-DEVICE"
+            | translate}}</p>
+          <p class="tag text-sm font-light">
+            {{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-FOLLOWED.HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER.HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER-TAG"
+            | translate}}</p>
+        </div>
+        <div class="question-footer-right flex align-items-center">
+          <img src="./assets/svgs/report-icon.svg" alt="report icon">
+          <p class="report text-sm underline">
+            {{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-FOLLOWED.HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER.HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER-REPORT"
+            | translate}}</p>
+        </div>
+      </div>
+
+      <div *ngIf="i > 0" class="question-answer-footer flex mt-3">
+        <a [href]="question.url" target="_blank" class="question-detail text-sm font-medium">
+          {{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-FOLLOWED.HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER.HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER-DETAIL"
+          | translate}}
+        </a>
+        <img src="./assets/svgs/right-arrow-icon.svg" alt="right arrow">
+      </div>
+    </div>
+
+    <div *ngIf="i > 0">
+      <app-question-answer [content]="question.content | customTitle:20" [url]="question.url"
+        [source]="question.source.name" [title]="question.title">
+      </app-question-answer>
+    </div>
+  </div>
+
+  <p-paginator [rows]="itemsPerPage" [totalRecords]="allQuestions.length" (onPageChange)="onPageChange($event)"
+    styleClass="custom-paginator">
+  </p-paginator>
+</div>

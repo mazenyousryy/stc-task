@@ -1,0 +1,65 @@
+#leader-board {
+  padding: $spacing-md-extra;
+  .account-header {
+    .account-header-left {
+      .account-header-left-title {
+        .account-header-left-title-badge {
+          margin-top: $spacing-sm;
+          .badge-img {
+            margin-inline-start: 0;
+          }
+          .badge-text {
+            margin-top: $spacing-sm-18;
+            margin-inline-start: $spacing-xxs;
+          }
+        }
+      }
+    }
+  }
+  #leader-board-content {
+    margin-block: $spacing-md-38;
+    border-top: 2px solid $off-white-color;
+    .leader-board-content-congrats {
+      .leader-board-content-congrats-left {
+        border: 1px solid $grey-dark-color;
+        border-radius: $radius-md;
+        .leader-board-content-congrats-left-content {
+          .congrats-img {
+            width: $badge-congrats-dimensions;
+            height: $badge-congrats-dimensions;
+          }
+          .congrats-content {
+            margin-inline-start: $spacing-sm-20;
+            .congrats-text {
+              margin-bottom: $spacing-xs;
+            }
+            .date-text {
+              color: $grey-dark-color;
+              margin-top: $spacing-xs;
+            }
+          }
+        }
+        .leader-board-content-congrats-left-button {
+          .button-icon {
+            margin-inline-end: $spacing-xxs;
+          }
+        }
+      }
+      padding-inline-end: $spacing-lg-46;
+    }
+    .leader-board-content-congrats-right {
+      padding-inline-start: $spacing-sm-20;
+      .leader-board-congrats-card {
+        background-color: $purple-color;
+        padding-inline-end: $spacing-xs;
+        .leader-board-content-congrats-right-content {
+          .points-number {
+            margin-block: $spacing-xs $spacing-xs-plus;
+            font-size: $spacing-md-plus;
+            color: $oasis-light-color;
+          }
+        }
+      }
+    }
+  }
+}

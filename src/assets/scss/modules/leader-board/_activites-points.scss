@@ -1,0 +1,38 @@
+.panel {
+  color: $black-color;
+  .gain-points-text {
+    margin-top: $spacing-md-38;
+  }
+  .card {
+    box-shadow: $table-box-shadow;
+    padding: $card-padding;
+    tr {
+      border-bottom: 1px solid $grey-dark-opacity-20-color;
+      th,
+      td {
+        color: $black-color;
+        padding: $table-padding;
+      }
+      .points-values {
+        color: $purple-color;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+html[dir="rtl"],
+[dir="rtl"] {
+  .panel {
+    .card {
+      tr {
+        th,
+        td {
+          text-align: right;
+        }
+      }
+    }
+  }
+}

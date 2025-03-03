@@ -1,0 +1,19 @@
+// PrimNG Custom
+
+.custom-otp-input {
+  width: 80px;
+  font-size: 42px;
+  border: 0 none;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: $grey-color;
+  border-bottom: 3px solid var(--surface-500);
+  border-radius: 0px;
+  margin: 0 0.2rem;
+}
+
+.custom-otp-input:focus {
+  outline: 0 none;
+  box-shadow: none;
+  border-bottom-color: $oasis-light-color;
+}

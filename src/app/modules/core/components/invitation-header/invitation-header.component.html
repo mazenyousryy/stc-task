@@ -1,0 +1,10 @@
+<header class="invitation-header flex justify-content-between align-items-center py-2 px-4">
+  <div class="logo">
+    <img src="assets/images/stc-logo.png" alt="STC Logo" />
+  </div>
+  <button (click)="changeLang()"
+    class="lang-btn text-white flex justify-content-between align-items-center cursor-pointer bg-transparent">
+    {{"HEADER.LANG" | translate}}
+    <img src="assets/svgs/language-icon.svg" alt="Language Icon">
+  </button>
+</header>

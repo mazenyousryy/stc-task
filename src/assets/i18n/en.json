@@ -1,0 +1,197 @@
+{
+  "HEADER": {
+    "LANG": "العربية"
+  },
+  "ASIDE": {
+    "HOME": "Home",
+    "DISCOVER": "Discover Tafani",
+    "COMMUNITY": "Community",
+    "PRODUCTS": "Products & Services",
+    "FEEDBACK": "Feedback",
+    "FAQs": "FAQs",
+    "LEADERBOARD": "Leaderboard"
+  },
+  "FIRST-TIME-LOGIN": {
+    "TITLE": "You are invited by",
+    "NAME": "Naser Mohammed A Almuhawwis",
+    "POSITION": "Solutions and Technologies Section Manager",
+    "PROFILE": "See profile",
+    "NOT-INTERESTED": "Not interested?",
+    "ACCEPT": "Accept Invitation",
+    "ENTER-OTP": {
+      "ENTER-OTP-HEADER": "Enter OTP",
+      "EMAIL-SENT": "We have sent an email to you email address",
+      "EMAIL-ADDRESS": "ree..........@stc.com.sa",
+      "RESEND-CODE": "Resend the code",
+      "VERIFY-ACCOUNT": "Verify the account"
+    },
+    "SERVICE-SELECTION": {
+      "SERVICE-SELECTION-HEADER": "Select the services you use from stc",
+      "SELECT-TITLE": "Select from the below list",
+      "SELECTION-OPTIONS": {
+        "OPTION-ONE": "Fixed Lines",
+        "OPTION-TWO": "Mobile Lines",
+        "OPTION-THREE": "ADSL Data",
+        "OPTION-FOUR": "Devices"
+      },
+      "DONE": "Done",
+      "SKIP": "Skip this step"
+    }
+  },
+  "TERMS-AND-CONDITIONS": {
+    "BREADCRUMB": {
+      "PREV-LINKS": {
+        "LINK-ONE": "Accept Invitation"
+      },
+      "CURRENT-LINK": "Accept Terms & Conditions"
+    },
+    "TITLE": "Accept Terms & Condition",
+    "SUB-TITLE": "Read and Accept the Terms & Conditions for continue to proceed.",
+    "CONFIDENTIAL": {
+      "CONFIDENTIAL-TITLE": "1.  Confidential",
+      "CONFIDENTIAL-PARAGRAPH-ONE": "Access and use of University-issued devices is a privilege that is granted in connection with an individual's duties to the University. These devices are to be used for conducting University business and/or in furtherance of the educational mission of the University. Requests for University-paid services require approval by an authorized department representative and the Provost's Office.",
+      "CONFIDENTIAL-PARAGRAPH-TWO": "Telecommunications will select a small number of approved devices. These devices have been tested for compatibility with the most common Brown applications and Brown WiFi. Should an end user desire a device/feature/service that is not available on one of the approved devices, the end user may present a case for Telecommunications to review the device for conditional approval. In the event the device is not approved and an end user still wants it, the end user will be required to sign a waiver confirming understanding that the University will offer \"best effort\" support of the devices. University-issued devices will be configured by CIS and will have active-synch enabled. The University reserves the right to \"push\" policies to mobile devices and to remotely reset devices. Any attempt to override University policies, i.e., \"Jailbreak\" a University-issued device, or any other action that violates manufacturer's warranty or Brown's agreement with carriers is prohibited."
+    },
+    "EXCLUSIONS": {
+      "EXCLUSIONS-TITLE": "2.  Exclusions",
+      "EXCLUSIONS-PARAGRAPH-ONE": " Requests for University-paid services require approval by an authorized department representative and the Provost's Office.",
+      "EXCLUSIONS-PARAGRAPH-TWO": "These devices have been tested for compatibility with the most common Brown applications and Brown WiFi. Should an end user desire a device/feature/service that is not available on one of the approved devices, the end user may present a case for Telecommunications to review the device for conditional approval. In the event the device is not approved and an end user still wants it, the end user will be required to sign a waiver confirming understanding that the University will offer \"best effort\" support of the devices. University-issued devices will be configured by CIS and will have active-synch enabled. The University reserves the right to \"push\" policies to mobile devices and to remotely reset devices. Any attempt to override University policies, i.e., \"Jailbreak\" a University-issued device, or any other action that violates manufacturer's warranty or Brown's agreement with carriers is prohibited."
+    },
+    "USE": {
+      "USE-TITLE": "3.  Use",
+      "USE-PARAGRAPH": "Brown applications and Brown WiFi. Should an end user desire a device/feature/service that is not available on one of the approved devices, the end user may present a case for Telecommunications to review the device for conditional approval. In the event the device is not approved and an end user still wants it, the end user will be required to sign a waiver confirming understanding that the University will offer \"best effort\" support of the devices. University-issued devices will be configured by CIS and will have active-synch enabled. The University reserves the right to \"push\" policies to mobile devices and to remotely reset devices."
+    },
+    "ACCEPT": "Accept and Continue"
+  },
+  "DECLINED-INVITATION": {
+    "DECLINE-INVITATION-HEADER": "Are you sure!",
+    "REJECT-OFFER": "Do you want to reject the invitation?",
+    "REJECT-OFFER-CONFIRM": "Once you exit you can’t join again.",
+    "CONFIRM": "Confirm",
+    "EXPIRED-INVITATION-PAGE": {
+      "TITLE": "Whoops!",
+      "SUBTITLE": "Your invitation has expired",
+      "DESCRIPTION": "Your invitation has expired due to your inactivity"
+    }
+  },
+  "NOT-FOUND": {
+    "NOT-FOUND-TITLE": "Can not found this page"
+  },
+  "HOME-PAGE": {
+    "HOME-PAGE-HEADER": {
+      "HEADER-TITLE": "Welcome,",
+      "HEADER-NAME": "Naser Mohammed A Almuhawwis",
+      "BADGE-PREMIUM": "Premium",
+      "BADGE-BEGINNER": "Beginner User",
+      "VIEW-ACCOUNT": "View Ambassador Account"
+    },
+    "HOME-PAGE-NEWS": {
+      "HOME-PAGE-NEWS-TABS": {
+        "HOME-PAGE-NEWS-TABS-TREND": "Trend",
+        "HOME-PAGE-NEWS-TABS-FOLLOWED": "Followed Topics",
+        "HOME-PAGE-NEWS-TABS-LATEST": "Latest News"
+      },
+      "HOME-PAGE-NEWS-HOW-TO": {
+        "HOME-PAGE-NEWS-TABS-HOW-TO-HEADER": "How-to Videos"
+      },
+      "HOME-PAGE-NEWS-TREND": {
+        "HOME-PAGE-NEWS-TREND-DATES": {
+          "HOME-PAGE-NEWS-TREND-DATES-TODAY": "Today",
+          "HOME-PAGE-NEWS-TREND-DATES-DAY-AGO": "One Day Ago",
+          "HOME-PAGE-NEWS-TREND-DATES-DAYS-AGO": "{{days}} days ago"
+        },
+        "HOME-PAGE-NEWS-TREND-USER-ROLE": "Tafani Member",
+        "HOME-PAGE-NEWS-TREND-FOLLOWING": "Following",
+        "HOME-PAGE-NEWS-TREND-REACT": "23.5K",
+        "HOME-PAGE-NEWS-TREND-LIKES": "3.5K",
+        "HOME-PAGE-NEWS-TREND-COMMENTS": "2K",
+        "HOME-PAGE-NEWS-TREND-SHARE": "Share your answer"
+      },
+      "HOME-PAGE-NEWS-FOLLOWED": {
+        "HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER": {
+          "HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER-DEVICE": "Mobile",
+          "HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER-TAG": "Bill",
+          "HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER-REPORT": "Report this answer",
+          "HOME-PAGE-NEWS-FOLLOWED-QUESTION-FOOTER-DETAIL": "Question Detail"
+        },
+        "HOME-PAGE-NEWS-FOLLOWED-QUESTION-QUESTION": {
+          "HOME-PAGE-NEWS-FOLLOWED-QUESTION-QUESTION-FOLLOW": ". Following",
+          "HOME-PAGE-NEWS-FOLLOWED-QUESTION-QUESTION-TAFANI": "tafani"
+        },
+        "HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER": {
+          "HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER-HEADER": "Answer",
+          "HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER-INSIGHTS": "Insights",
+          "HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER-REACTIONS": "27 reactions",
+          "HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER-REPORT": "Report this answer"
+        }
+      }
+    }
+  },
+  "LEADERBOARD": {
+    "LEADERBOARD-HEADER": {
+      "LEADERBOARD-HEADER-TITLE": "Your Leaderboard",
+      "LEADERBOARD-HEADER-PARAGRAPH": "Your verified achievements in the global community can help you get recognize and stand out at your workplace."
+    },
+    "LEADER-BOARD-CARD": {
+      "LEADERBOARD-CARD-CONG": "Congrats! 🎉",
+      "LEADERBOARD-CARD-LEVEL": "You’ve earned Beginner level",
+      "LEADERBOARD-CARD-DATE": "29 May 2022",
+      "LEADERBOARD-CARD-SHARE-BTN": "Share in community"
+    },
+    "LEADERBOARD-TABS": {
+      "LEADERBOARD-TABS-ACTIVITIES": "Activities and Points",
+      "LEADERBOARD-TABS-BADGE": "Badge Points"
+    },
+    "LEADERBOARD-ACTIVITIES-AND-POINTS": {
+      "LEADERBOARD-ACTIVITIES-AND-POINTS-HEADER": "How to gain points?",
+      "LEADERBOARD-ACTIVITIES-AND-POINTS-ACTIVITY": "Activity",
+      "LEADERBOARD-ACTIVITIES-AND-POINTS-POINTS": "Points",
+      "LEADERBOARD-ACTIVITIES-AND-POINTS-ASK": "Ask a Question",
+      "LEADERBOARD-ACTIVITIES-AND-POINTS-SURVEY": "Submit a Survey",
+      "LEADERBOARD-ACTIVITIES-AND-POINTS-FOLLOW": "Follow a new member",
+      "LEADERBOARD-ACTIVITIES-AND-POINTS-ANSWER": "Answer a question",
+      "LEADERBOARD-ACTIVITIES-AND-POINTS-FIRST": "First login",
+      "LEADERBOARD-ACTIVITIES-AND-POINTS-FEEDBACK": "Add feedback/Idea",
+      "LEADERBOARD-ACTIVITIES-AND-POINTS-REPLY": "Reply an answer",
+      "LEADERBOARD-ACTIVITIES-AND-POINTS-REACT": "React on answer/reply",
+      "POINTS": {
+        "POINTS-100": "100 points",
+        "POINTS-200": "200 points",
+        "POINTS-40": "40 points",
+        "POINTS-80": "80 points",
+        "POINTS-55": "55 points",
+        "POINTS-17": "17 points",
+        "POINTS-20": "20 points",
+        "POINTS-15": "15 points"
+      }
+    },
+    "LEADERBOARD-BADGE-POINTS": {
+      "LEADERBOARD-BADGE-POINTS-LEVEL": {
+        "LEADERBOARD-BADGE-POINTS-LEVEL-HEADER": "Level",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-BEGINNER-USER": "Beginner User",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-BEGINNER-USER-PTS": "0 to 99 pts",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-BEGINNER-USER-BADGE": "Earned badge",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-ADVANCED-USER": "Advanced User",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-ADVANCED-USER-PTS": "1,000 - 4,999 pts",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-ADVANCED-USER-BADGE": "Coming badge",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-INFLUENCER-USER": "Influencer",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-INFLUENCER-USER-PTS": "5,000 - 9,999 pts",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-TAFANI-USER": "Tafani User",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-TAFANI-USER-PTS": "5,000 - 9,999 pts"
+      },
+      "LEADERBOARD-BADGE-POINTS-ELIGIBLE": {
+        "LEADERBOARD-BADGE-POINTS-ELIGIBLE-HEADER": "Eligible for",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-BEGINNER-USER": "Points, Qitaf points, Badge, Leaderboard",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-ADVANCED-USER": "Points, Badge, Leaderboard, Qitaf points, Certificate of Achievement",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-INFLUENCER-USER": "Points, Badge,Leaderboard, Qitaf Points, Certificate of Achievement, Easter Eggs, Service Discounts",
+        "LEADERBOARD-BADGE-POINTS-LEVEL-TAFANI-USER": "Points, Badge,Leaderboard, Qitaf Points, Certificate of Achievement, Easter Eggs, Service Discounts, Leadership kudos"
+      }
+    },
+    "LEADERBOARD-MY-POINTS": {
+      "LEADERBOARD-MY-POINTS-HEADER": "My Points",
+      "LEADERBOARD-MY-POINTS-POINTS": "32,000",
+      "LEADERBOARD-MY-POINTS-POINT": "Point",
+      "LEADERBOARD-MY-POINTS-UPDATE": "Last updated on 29 Jun 2022"
+    }
+  }
+}

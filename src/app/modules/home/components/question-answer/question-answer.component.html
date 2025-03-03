@@ -1,0 +1,43 @@
+<div class="question-answer mt-5">
+  <p class="font-medium">
+    {{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-FOLLOWED.HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER.HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER-HEADER"
+    | translate}}</p>
+  <div class="answer-content">
+    <h4 class="author font-medium">{{ source }}</h4>
+    <div class="question-title flex">
+      <div class="user-image flex flex-column justify-content-start">
+        <img src="assets/images/news-img.jpg" alt="User Image" class="border-circle w-full" />
+      </div>
+      <div class="question-description flex flex-column">
+        <p class="question-header font-bold">{{ title }}</p>
+        <p class="question-content mt-3">{{ content | customTitle:20}}</p>
+        <div class="insights mt-2">
+          <p class="text-sm my-2">
+            {{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-FOLLOWED.HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER.HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER-INSIGHTS"
+            | translate}}</p>
+          <div class="insights-content flex gap-3 align-items-center">
+            <div class="avatar-group flex align-items-center relative">
+              <div
+                class="avatar avatar-oasis flex justify-content-center align-items-center overflow-hidden border-circle">
+                <img src="./assets/svgs/like-white-icon.svg" alt="Like icon" class="w-fit" />
+              </div>
+              <div
+                class="avatar avatar-coral  flex justify-content-center align-items-center overflow-hidden border-circle">
+                <img src="./assets/svgs/smile-white-icon.svg" alt="Smile icon" class="w-fit" />
+              </div>
+            </div>
+            <p class="text-sm">
+              {{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-FOLLOWED.HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER.HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER-REACTIONS"
+              | translate}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="answer-footer flex align-items-center justify-content-end">
+    <img src="./assets/svgs/report-icon.svg" alt="report icon">
+    <p class="report text-sm underline">
+      {{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-FOLLOWED.HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER.HOME-PAGE-NEWS-FOLLOWED-QUESTION-ANSWER-REPORT"
+      | translate}}</p>
+  </div>
+</div>

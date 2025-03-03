@@ -1,0 +1,30 @@
+.followed-topics {
+  .question-footer {
+    border-bottom: 2px solid $off-white-color;
+    padding-bottom: $spacing-xs-plus;
+    color: $light-black;
+    .question-footer-left {
+      .device {
+        border: 1px solid $light-black;
+        border-radius: $spacing-sm-20;
+      }
+      .tag {
+        margin-inline-start: $spacing-xs-plus;
+        font-family: $font-family-2;
+        color: $grey-dark-color;
+      }
+    }
+    .question-footer-right {
+      .report {
+        color: $coral-color;
+        margin-inline-start: $spacing-xxxs;
+      }
+    }
+  }
+  .question-answer-footer {
+    .question-detail {
+      color: $coral-color;
+      margin-inline-end: $spacing-xxxs;
+    }
+  }
+}

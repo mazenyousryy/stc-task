@@ -1,0 +1,40 @@
+<div class="trend-content">
+  <div class="trend-item flex gap-3 p-3" *ngFor="let item of paginatedItems">
+    <div class="user-image">
+      <img src="assets/images/news-img.jpg" alt="User Image" class="border-circle" />
+    </div>
+    <div class="user-content flex-1">
+      <h4 class="news-title text-xl font-bold line-height-2	">
+        {{ item.title }}
+        <span class="date font-normal">{{ item.publishedAt | customRelativeTime }}</span>
+      </h4>
+      <p class="user-role text-sm	font-medium">
+        {{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-TREND.HOME-PAGE-NEWS-TREND-USER-ROLE" |
+        translate}} <span
+          class="following">{{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-TREND.HOME-PAGE-NEWS-TREND-FOLLOWING" |
+          translate}}</span></p>
+      <div class="engagement mb-4 flex gap-3 w-full">
+        <span class="text-lg font-medium flex align-items-center"><img src="./assets/svgs/smile-icon.svg"
+            alt="smile icon" class="icon">{{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-TREND.HOME-PAGE-NEWS-TREND-REACT" |
+          translate}}</span>
+        <span class="text-lg font-medium flex align-items-center"><img src="./assets/svgs/like-icon.svg" alt="like icon"
+            class="icon">{{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-TREND.HOME-PAGE-NEWS-TREND-LIKES"
+          |
+          translate}}</span>
+        <span class="text-lg font-medium flex align-items-center"><img src="./assets/svgs/comment-icon.svg"
+            alt="comment icon"
+            class="icon">{{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-TREND.HOME-PAGE-NEWS-TREND-COMMENTS" |
+          translate}}</span>
+      </div>
+      <button
+        class="custom-btn share-answer-btn font-medium">{{"HOME-PAGE.HOME-PAGE-NEWS.HOME-PAGE-NEWS-TREND.HOME-PAGE-NEWS-TREND-SHARE"
+        |
+        translate}}</button>
+    </div>
+  </div>
+  <!-- Paginator -->
+  <p-paginator [rows]="itemsPerPage" [totalRecords]="newsItems.length" (onPageChange)="onPageChange($event)"
+    styleClass="custom-paginator">
+  </p-paginator>
+
+</div>

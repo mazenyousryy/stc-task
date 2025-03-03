@@ -1,0 +1,19 @@
+.how-to-video {
+  background-color: $grey-medium-color;
+  padding-top: $spacing-md-plus;
+  color: $black-color;
+  .video-card {
+    border-bottom: 2px solid $off-white-color;
+    &:last-child {
+      border: 0;
+      padding-bottom: $spacing-lg-60;
+    }
+    .video-details {
+      .video-img {
+        .share-icon {
+          background-color: $coral-color;
+        }
+      }
+    }
+  }
+}

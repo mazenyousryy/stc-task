@@ -1,0 +1,12 @@
+.service-selection-dialog {
+  form {
+    .p-field-checkbox {
+      .checkbox-label {
+        margin-inline-start: $spacing-sm;
+      }
+    }
+  }
+  .selection-description {
+    color: $grey-dark-color;
+  }
+}
